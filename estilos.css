@@ -1,0 +1,50 @@
+/* estilos.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7faff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+#contenedor-malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.curso {
+  background-color: #d0e8f2;
+  border: 2px solid #a4c5d9;
+  border-radius: 12px;
+  padding: 12px;
+  width: 220px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.curso:hover {
+  background-color: #c2ddf0;
+  transform: scale(1.03);
+}
+
+.curso.aprobado {
+  background-color: #c4f4c4;
+  border-color: #78c378;
+}
+
+.curso.bloqueado {
+  background-color: #f4cccc;
+  border-color: #e06666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
